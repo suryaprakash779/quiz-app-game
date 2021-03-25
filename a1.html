@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Surya Quiz Web App </title>
+	<!--<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"> -->
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="a3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onkeypress="enter(event)">
+	<section id="app-container">
+		<!-- attend the quiz section -->
+		<section id="workspace">
+			<div id="expose"><span id="attendQuiz"></span> &#47; <span id="noOfQuizes"></span></div>
+			<div id="question">Do you like this quiz app?</div>
+			<div id="options"></div>
+			<button id="submit" onclick="answered()">Submit</button>
+			<button id="completeQuiz" onclick="completeQuiz()">Complete Quiz</button>
+		</section>
+		<!-- Begin the quiz section -->
+		<section id="intro">
+			<h1 id="about"><span>Surya </span>&nbsp;<span>Web</span><br><span>Quiz</span>&nbsp;<span>App</span></h1>
+			<button id="startQuiz" onclick="startGame()">Start Quiz&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+			<div id="motivate">Enjoy the learning...</div>
+		</section>
+		<!-- Restart the quiz section -->
+		<section id="restartGame">
+			<h1 id="congrats">Good job! 👏</h1>
+			<div id="scores">5 / 5</div>
+			<div id="keep" onclick="newGame()">Keep learning... 💡</div>
+		</section>
+		<section id="audios"> <!-- audios section -->
+			<audio id="audioStart"><source src="Mouse-Click-01-c-FesliyanStudios.com.mp3" type="audio/mp3"></audio>
+			<audio id="audioSubmit"><source src="Mouse-Click-00-c-FesliyanStudios.com.mp3" type="audio/mp3"></audio>
+			<audio id="audioNewGame"><source src="Mouse-Click-03-c-FesliyanStudios.com.mp3" type="audio/mp3"></audio>
+		</section>
+	</section>
+
+	<script type="text/javascript" src="a2.js"></script>
+</body>
+</html>
